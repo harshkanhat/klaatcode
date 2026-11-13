@@ -428,12 +428,12 @@ export type Theme =
   | "matrix"
   | "cobalt"
   | "midnight"
-  | "tokyo-night";
+  | "tokyo-night"\n  | "one-dark";
 
 export const THEME_NAMES: Theme[] = [
   "dark", "light", "dracula", "nord", "ayu",
   "catppuccin", "catppuccin-latte", "catppuccin-frappe", "catppuccin-macchiato",
-  "gruvbox", "neon", "synthwave", "ember", "matrix", "cobalt", "midnight", "tokyo-night",
+  "gruvbox", "neon", "synthwave", "ember", "matrix", "cobalt", "midnight", "tokyo-night", "one-dark",
 ];
 
 export const THEME_DESCRIPTIONS: Record<Theme, string> = {
@@ -453,7 +453,7 @@ export const THEME_DESCRIPTIONS: Record<Theme, string> = {
   matrix:     "Matrix — green phosphor terminal aesthetic",
   cobalt:     "Cobalt — deep blue with golden highlights",
   midnight:   "Midnight — indigo depths with sky blue & lavender",
-  "tokyo-night": "Tokyo Night — deep navy with cool blue & green",
+  "tokyo-night": "Tokyo Night — deep navy with cool blue & green",\n  "one-dark": "One Dark — balanced dark palette with blue and gold accents",
 };
 
 export function getPalette(theme: Theme): ThemePalette {
@@ -473,7 +473,7 @@ export function getPalette(theme: Theme): ThemePalette {
     case "matrix":     return MATRIX_PALETTE;
     case "cobalt":     return COBALT_PALETTE;
     case "midnight":   return MIDNIGHT_PALETTE;
-    case "tokyo-night": return TOKYO_NIGHT_PALETTE;
+    case "tokyo-night": return TOKYO_NIGHT_PALETTE;\n    case "one-dark":    return ONE_DARK_PALETTE;
     default:           return DARK_PALETTE;
   }
 }
