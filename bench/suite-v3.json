@@ -353,6 +353,13 @@
       "prompt": "Implement the workflow state machine defined by the transition tables in SPEC.md (states, guarded transitions, entry actions, illegal-transition errors, history) in src/workflow.ts. Tests in src/workflow.test.ts. Do not edit the test file or the spec.",
       "difficulty": "hard",
       "category": "spec"
+    },
+    {
+      "id": "implement-port-parser",
+      "dir": "tasks-v3/implement-port-parser",
+      "prompt": "Implement parsePort in src/port.ts according to its contract comment. It must accept valid TCP/UDP port numbers and decimal strings, trim surrounding whitespace, and return the supplied fallback for malformed or out-of-range values. Tests in src/port.test.ts define the edge cases. Do not edit the test file.",
+      "difficulty": "easy",
+      "category": "implement"
     }
   ]
 }
